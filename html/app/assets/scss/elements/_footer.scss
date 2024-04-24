@@ -1,3 +1,36 @@
-footer {
+body {
+    & > footer {
+        .footer--container {
+            min-height: 400px;
+            // @include responsive(large) {
+            // }
+    
+            position: relative;
+            overflow: hidden;
+    
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 16px;
+    
+            background-color: color(secondary);
+            color: color(light);
+        }
 
+        .copyright {
+            min-height: 80px;
+            // @include responsive(large) {
+            // }
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            background-color: color(primary);
+
+            font-size: font-size(small);
+            color: color(light);
+            text-align: center;
+        }
+    }
 }

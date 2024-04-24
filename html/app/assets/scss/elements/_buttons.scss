@@ -1,6 +1,106 @@
 a,
 [type="submit"],
 button{
-	&.btn {		
+
+	&.btn {
+		@include font(bold);
+	
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 16px;
+		flex-shrink: 0;
+	
+		border-radius: 8px;
+		background-color: transparent;
+		border: 0 solid transparent;
+	
+		color: color(primary);
+	
+		&-primary {
+			@include font(bold);
+
+			border: 2px solid color(primary);
+			background: color(primary);
+			color: color(light) !important;
+
+			&:hover {
+				border: 2px solid fade-out($color: color(primary), $amount: .5);
+				background: fade-out($color: color(primary), $amount: .5);
+				color: color(light) !important;
+			}
+
+			&:disabled {
+				background: fade-in($color: color(dark), $amount: 0.5);
+				border: 0;
+				color: color(light) !important;
+			}
+		}
+
+		&-secondary {
+			@include font(bold);
+
+			border: 2px solid color(secondary);
+			background: color(light);
+			color: color(secondary);
+
+			&:hover {
+				background-color: color(dark);
+				color: color(secondary);
+			}
+
+			&:disabled {
+				background: color(light);
+				border: 0;
+				color: color(dark);
+
+				&:hover {
+					background-color: color(dark);
+					color: color(secondary);
+				}
+			}
+		}
+	
+		&-link {
+			@include font(bold);
+	
+			background-color: transparent;
+			color: color(primary);
+	
+			&:hover {
+				background-color: transparent;
+				color: inherit;
+				text-decoration: underline;
+			}
+		}
+	
+		&:hover {
+			&-link {
+				@include font(bold);
+	
+				background-color: transparent;
+				color: color(primary);
+	
+				&:hover {
+					background-color: transparent;
+					color: color(primary);
+	
+					text-decoration: underline;
+				}
+			}
+		}
+	
+		&:disabled {
+			color: color(primary);
+			border: 0;
+	
+			cursor: not-allowed;
+		}
+	
+		&:focus {
+			outline: 0;
+			box-shadow: 0 0 2px 0.05rem color(primary);
+		}
 	}
 }

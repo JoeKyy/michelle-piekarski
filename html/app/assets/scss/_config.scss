@@ -5,19 +5,16 @@
 
 $colors: (
   primary: (
-    base: #046198,
+    base: #5DCB99,
   ),
   secondary: (
-    base: #ed731f,
-  ),
-  tertiary: (
-    base: #a3ca5a,
+    base: #CB995D,
   ),
   light: (
-    base: #ffffff,
+    base: #FFFFFF,
   ),
   dark: (
-    base: #1a3240,
+    base: #000000,
   ),
   danger      : #f85757,
   success     : #00b412,
@@ -29,27 +26,27 @@ $colors: (
 
 $font-config: (
   thin: (
-    name: 'Roboto',
+    name: 'Montserrat',
     weight: 100
   ),
   light: (
-    name: 'Roboto',
+    name: 'Montserrat',
     weight: 300
   ),
   base: (
-    name: 'Roboto',
+    name: 'Montserrat',
     weight: 400
   ),
   medium: (
-    name: 'Roboto',
+    name: 'Montserrat',
     weight: 500
   ),
   bold: (
-    name: 'Roboto',
+    name: 'Montserrat',
     weight: 700
   ),
   black: (
-    name: 'Roboto',
+    name: 'Montserrat',
     weight: 900
   )
 ) !default;

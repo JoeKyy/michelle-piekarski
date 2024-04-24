@@ -1,0 +1,95 @@
+$icn-comodidades-01-x: 0px;
+$icn-comodidades-01-y: 0px;
+$icn-comodidades-01-offset-x: 0px;
+$icn-comodidades-01-offset-y: 0px;
+$icn-comodidades-01-width: 80px;
+$icn-comodidades-01-height: 80px;
+$icn-comodidades-01-total-width: 240px;
+$icn-comodidades-01-total-height: 218px;
+$icn-comodidades-01-image: '../../assets/images/sprite.png';
+$icn-comodidades-01: 0px 0px 0px 0px 80px 80px 240px 218px '../../assets/images/sprite.png';
+$icn-comodidades-02-x: 80px;
+$icn-comodidades-02-y: 0px;
+$icn-comodidades-02-offset-x: -80px;
+$icn-comodidades-02-offset-y: 0px;
+$icn-comodidades-02-width: 80px;
+$icn-comodidades-02-height: 80px;
+$icn-comodidades-02-total-width: 240px;
+$icn-comodidades-02-total-height: 218px;
+$icn-comodidades-02-image: '../../assets/images/sprite.png';
+$icn-comodidades-02: 80px 0px -80px 0px 80px 80px 240px 218px '../../assets/images/sprite.png';
+$icn-comodidades-03-x: 0px;
+$icn-comodidades-03-y: 80px;
+$icn-comodidades-03-offset-x: 0px;
+$icn-comodidades-03-offset-y: -80px;
+$icn-comodidades-03-width: 80px;
+$icn-comodidades-03-height: 80px;
+$icn-comodidades-03-total-width: 240px;
+$icn-comodidades-03-total-height: 218px;
+$icn-comodidades-03-image: '../../assets/images/sprite.png';
+$icn-comodidades-03: 0px 80px 0px -80px 80px 80px 240px 218px '../../assets/images/sprite.png';
+$icn-comodidades-04-x: 80px;
+$icn-comodidades-04-y: 80px;
+$icn-comodidades-04-offset-x: -80px;
+$icn-comodidades-04-offset-y: -80px;
+$icn-comodidades-04-width: 80px;
+$icn-comodidades-04-height: 80px;
+$icn-comodidades-04-total-width: 240px;
+$icn-comodidades-04-total-height: 218px;
+$icn-comodidades-04-image: '../../assets/images/sprite.png';
+$icn-comodidades-04: 80px 80px -80px -80px 80px 80px 240px 218px '../../assets/images/sprite.png';
+$icn-comodidades-05-x: 160px;
+$icn-comodidades-05-y: 0px;
+$icn-comodidades-05-offset-x: -160px;
+$icn-comodidades-05-offset-y: 0px;
+$icn-comodidades-05-width: 80px;
+$icn-comodidades-05-height: 80px;
+$icn-comodidades-05-total-width: 240px;
+$icn-comodidades-05-total-height: 218px;
+$icn-comodidades-05-image: '../../assets/images/sprite.png';
+$icn-comodidades-05: 160px 0px -160px 0px 80px 80px 240px 218px '../../assets/images/sprite.png';
+$icn-comodidades-06-x: 160px;
+$icn-comodidades-06-y: 80px;
+$icn-comodidades-06-offset-x: -160px;
+$icn-comodidades-06-offset-y: -80px;
+$icn-comodidades-06-width: 80px;
+$icn-comodidades-06-height: 80px;
+$icn-comodidades-06-total-width: 240px;
+$icn-comodidades-06-total-height: 218px;
+$icn-comodidades-06-image: '../../assets/images/sprite.png';
+$icn-comodidades-06: 160px 80px -160px -80px 80px 80px 240px 218px '../../assets/images/sprite.png';
+$logo-x: 0px;
+$logo-y: 160px;
+$logo-offset-x: 0px;
+$logo-offset-y: -160px;
+$logo-width: 60px;
+$logo-height: 58px;
+$logo-total-width: 240px;
+$logo-total-height: 218px;
+$logo-image: '../../assets/images/sprite.png';
+$logo: 0px 160px 0px -160px 60px 58px 240px 218px '../../assets/images/sprite.png';
+
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  background-image: url(nth($sprite, 9));
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
