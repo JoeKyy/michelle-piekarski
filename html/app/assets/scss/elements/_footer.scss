@@ -1,20 +1,67 @@
 body {
     & > footer {
         .footer--container {
-            min-height: 400px;
-            // @include responsive(large) {
-            // }
-    
             position: relative;
             overflow: hidden;
-    
+            
             display: flex;
             justify-content: center;
             align-items: center;
             gap: 16px;
+
+            min-height: 400px;
+            padding: space(m) 0;
     
             background-color: color(secondary);
             color: color(light);
+
+            h6,
+            p {
+                margin-top: space(base);
+            }
+
+            dl {
+                display: flex;
+                gap: 16px;
+                align-items: center;
+                margin-top: space(m);
+
+                dt {
+                    i {
+                        width: 16px;
+                        font-size: font-size(large);
+                    }
+                }
+            }
+            
+            nav {
+                p,
+                li {
+                    margin-top: space(p);
+                }
+            }
+
+            .soclal-list {
+                display: flex;
+                gap: 10px;
+
+                margin-top: space(m);
+
+                a {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 30px;
+                    height: 30px;
+                    background-color: color(primary);
+                    border-radius: 25px;
+
+                    &:hover {
+                        background: fade-out($color: color(primary), $amount: .5);
+                        text-decoration: underline;
+                    }
+                }
+            }
         }
 
         .copyright {

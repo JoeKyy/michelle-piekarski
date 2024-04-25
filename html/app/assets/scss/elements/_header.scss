@@ -117,9 +117,11 @@ body {
             .nav-button {
                 @include responsive(large) {
                     display: none;
+                    float: inherit;
                 }
 
                 position: relative;
+                float: right;
 
                 z-index: 99999;
 

@@ -87,6 +87,48 @@ td {
 /*------------------------------------*\
     TYPOGRAPHY
 \*------------------------------------*/
+h1,
+.h1 {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+h2,
+.h2 {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 2.25rem;
+}
+
+h3,
+.h3 {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+h4,
+.h4 {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+h5,
+.h5 {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 1.125rem;
+}
+
+h6,
+.h6 {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 1rem;
+}
+
 a {
   color: inherit;
 }
@@ -112,11 +154,7 @@ a.btn,
 button.btn {
   font-family: "Montserrat";
   font-weight: 700;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 16px;
+  display: inline-flex;
   flex-shrink: 0;
   border-radius: 8px;
   background-color: transparent;
@@ -129,20 +167,25 @@ button.btn-primary {
   font-family: "Montserrat";
   font-weight: 700;
   border: 2px solid #5DCB99;
-  background: #5DCB99;
+  background-color: #5DCB99;
   color: #FFFFFF !important;
 }
-a.btn-primary:hover,
+a.btn-primary:hover, a.btn-primary:active, a.btn-primary:focus,
 [type=submit].btn-primary:hover,
-button.btn-primary:hover {
+[type=submit].btn-primary:active,
+[type=submit].btn-primary:focus,
+button.btn-primary:hover,
+button.btn-primary:active,
+button.btn-primary:focus {
   border: 2px solid rgba(93, 203, 153, 0.5);
-  background: rgba(93, 203, 153, 0.5);
+  border-color: rgba(93, 203, 153, 0.5) !important;
+  background-color: rgba(93, 203, 153, 0.5) !important;
   color: #FFFFFF !important;
 }
 a.btn-primary:disabled,
 [type=submit].btn-primary:disabled,
 button.btn-primary:disabled {
-  background: black;
+  background-color: black;
   border: 0;
   color: #FFFFFF !important;
 }
@@ -152,7 +195,7 @@ button.btn-secondary {
   font-family: "Montserrat";
   font-weight: 700;
   border: 2px solid #CB995D;
-  background: #FFFFFF;
+  background-color: #FFFFFF;
   color: #CB995D;
 }
 a.btn-secondary:hover,
@@ -164,7 +207,7 @@ button.btn-secondary:hover {
 a.btn-secondary:disabled,
 [type=submit].btn-secondary:disabled,
 button.btn-secondary:disabled {
-  background: #FFFFFF;
+  background-color: #FFFFFF;
   border: 0;
   color: #000000;
 }
@@ -315,6 +358,7 @@ body > header .menu nav ul li a.btn:hover {
 }
 body > header .menu .nav-button {
   position: relative;
+  float: right;
   z-index: 99999;
   display: inherit;
   padding: 8px;
@@ -324,6 +368,7 @@ body > header .menu .nav-button {
 @media (min-width: 79.9375em) {
   body > header .menu .nav-button {
     display: none;
+    float: inherit;
   }
 }
 body > header .menu .nav-button .hamburger-box {
@@ -388,15 +433,52 @@ main {
     FOOTER
 \*------------------------------------*/
 body > footer .footer--container {
-  min-height: 400px;
   position: relative;
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 16px;
+  min-height: 400px;
+  padding: 24px 0;
   background-color: #CB995D;
   color: #FFFFFF;
+}
+body > footer .footer--container h6,
+body > footer .footer--container p {
+  margin-top: 16px;
+}
+body > footer .footer--container dl {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-top: 24px;
+}
+body > footer .footer--container dl dt i {
+  width: 16px;
+  font-size: 1.125rem;
+}
+body > footer .footer--container nav p,
+body > footer .footer--container nav li {
+  margin-top: 8px;
+}
+body > footer .footer--container .soclal-list {
+  display: flex;
+  gap: 10px;
+  margin-top: 24px;
+}
+body > footer .footer--container .soclal-list a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  background-color: #5DCB99;
+  border-radius: 25px;
+}
+body > footer .footer--container .soclal-list a:hover {
+  background: rgba(93, 203, 153, 0.5);
+  text-decoration: underline;
 }
 body > footer .copyright {
   min-height: 80px;

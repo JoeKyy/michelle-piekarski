@@ -1,14 +1,38 @@
-h1 {}
+h1,
+.h1 {
+    @include font(bold);
+    font-size: font-size(xxxbig);
+}
 
-h2 {}
+h2,
+.h2 {
+    @include font(bold);
+    font-size: font-size(xxbig);
+}
 
-h3 {}
+h3,
+.h3 {
+    @include font(bold);
+    font-size: font-size(xbig);
+}
 
-h4 {}
+h4,
+.h4 {
+    @include font(bold);
+    font-size: font-size(big);
+}
 
-h5 {}
+h5,
+.h5 {
+    @include font(bold);
+    font-size: font-size(large);
+}
 
-h6 {}
+h6,
+.h6 {
+    @include font(bold);
+    font-size: font-size(medium);
+}
 
 p {
 }
