@@ -1,3 +1,10 @@
 section {
-    
+    h2 {
+        @include font(bold);
+        color: inherit;
+
+        span {
+            border-bottom: 3px solid;
+        }
+    }
 }

@@ -35,9 +35,14 @@ h6,
 }
 
 p {
+    margin-bottom: space(base);
+
+    font-size: font-size(normal);
 }
 
-hr {}
+hr {
+    border: 3px solid;
+}
 
 ul {
     li {}
@@ -58,4 +63,40 @@ em {
 
 strong {
     @include font(bold);
+}
+
+.bg-color-primary {
+    background-color: color(primary);
+}
+
+.bg-color-secondary {
+    background-color: color(secondary);
+}
+
+.bg-color-light {
+    background-color: color(light);
+}
+
+.bg-color-dark {
+    background-color: color(dark);
+}
+
+.text-color-primary {
+    color: color(primary);
+    border-color: color(primary);
+}
+
+.text-color-secondary {
+    color: color(secondary);
+    border-color: color(secondary);
+}
+
+.text-color-light {
+    color: color(light);
+    border-color: color(light);
+}
+
+.text-color-dark {
+    color: color(dark);
+    border-color: color(dark);
 }

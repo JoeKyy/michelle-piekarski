@@ -129,6 +129,15 @@ h6,
   font-size: 1rem;
 }
 
+p {
+  margin-bottom: 16px;
+  font-size: 0.875rem;
+}
+
+hr {
+  border: 3px solid;
+}
+
 a {
   color: inherit;
 }
@@ -144,6 +153,42 @@ em {
 strong {
   font-family: "Montserrat";
   font-weight: 700;
+}
+
+.bg-color-primary {
+  background-color: #5DCB99;
+}
+
+.bg-color-secondary {
+  background-color: #CB995D;
+}
+
+.bg-color-light {
+  background-color: #FFFFFF;
+}
+
+.bg-color-dark {
+  background-color: #000000;
+}
+
+.text-color-primary {
+  color: #5DCB99;
+  border-color: #5DCB99;
+}
+
+.text-color-secondary {
+  color: #CB995D;
+  border-color: #CB995D;
+}
+
+.text-color-light {
+  color: #FFFFFF;
+  border-color: #FFFFFF;
+}
+
+.text-color-dark {
+  color: #000000;
+  border-color: #000000;
 }
 
 /*------------------------------------*\
@@ -429,6 +474,15 @@ main {
 /*------------------------------------*\
     SECTION
 \*------------------------------------*/
+section h2 {
+  font-family: "Montserrat";
+  font-weight: 700;
+  color: inherit;
+}
+section h2 span {
+  border-bottom: 3px solid;
+}
+
 /*------------------------------------*\
     FOOTER
 \*------------------------------------*/
