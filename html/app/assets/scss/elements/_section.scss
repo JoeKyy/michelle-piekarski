@@ -7,4 +7,28 @@ section {
             border-bottom: 3px solid;
         }
     }
+
+    &#destaque {
+        .jumbotron {
+            background-image: url(../images/img-destaque.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+            .container {
+                > div {
+                    min-height: 500px;
+                }
+            }
+        }
+    }
+
+    &#depoimentos {
+        .depoimentos--box {
+            li {
+                > div {
+                    box-shadow: -1px 1px 4px 0 rgba(0,0,0,0.5)
+                }
+            }
+        }
+    }
 }

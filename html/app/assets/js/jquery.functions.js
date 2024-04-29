@@ -18,4 +18,79 @@ $(function () {
 			$('.menu nav').addClass('nav-menu--close');
 		}
 	});
+
+    $('.tratamentos--slide').slick({
+		dots: false,
+		arrows: true,
+		infinite: true,
+		speed: 300,
+		slidesToShow: 6,
+		slidesToScroll: 1,
+		responsive: [
+			{
+				breakpoint: 1025,
+				settings: {
+				slidesToShow: 5,
+				slidesToScroll: 1,
+				}
+			},
+			{
+				breakpoint: 480,
+				settings: {
+				slidesToShow: 2,
+				slidesToScroll: 1
+				}
+			}
+		]
+	});
+
+    $('.procedimentos--slide').slick({
+		dots: false,
+		arrows: true,
+		infinite: true,
+		speed: 300,
+		slidesToShow: 4,
+		slidesToScroll: 1,
+		responsive: [
+			{
+				breakpoint: 1025,
+				settings: {
+				slidesToShow: 3,
+				slidesToScroll: 1,
+				}
+			},
+			{
+				breakpoint: 480,
+				settings: {
+				slidesToShow: 2,
+				slidesToScroll: 1
+				}
+			}
+		]
+	});
+
+    $('.depoimentos--box').slick({
+		dots: false,
+		arrows: true,
+		infinite: true,
+		speed: 300,
+		slidesToShow: 4,
+		slidesToScroll: 1,
+		responsive: [
+			{
+				breakpoint: 1025,
+				settings: {
+				slidesToShow: 3,
+				slidesToScroll: 1,
+				}
+			},
+			{
+				breakpoint: 480,
+				settings: {
+				slidesToShow: 2,
+				slidesToScroll: 1
+				}
+			}
+		]
+	});
 });

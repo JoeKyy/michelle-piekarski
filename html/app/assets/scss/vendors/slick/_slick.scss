@@ -9,7 +9,8 @@
             bottom: 0;
             width: 30px;
             height: 30px;
-            background: inherit;
+            background-color: color(secondary);
+            color: color(light);
             text-rendering: auto;
             font-size: 0;
             border: 0;
@@ -19,19 +20,32 @@
                 position: absolute;
                 left: 0;
                 margin: (space(xg) * 1.5) auto auto (- space(xg));
+                color: color(light);
                 &:before {
-
-                    display: block;
                     content: "";
+
+                    width: 0px;
+                    height: 0px;
+                    border-style: solid;
+                    border-width: 8px 8px 8px 0;
+                    border-color: transparent color(light) transparent transparent;
+                    transform: rotate(0deg);
                 }
             }
             &.slick-next {
                 position: absolute;
                 right: 0;
                 margin: (space(xg) * 1.5) (- space(xg)) auto auto;
+                color: color(light);
                 &:before {
-                    display: block;
                     content: "";
+
+                    width: 0px;
+                    height: 0px;
+                    border-style: solid;
+                    border-width: 8px 0 8px 8px;
+                    border-color: transparent transparent transparent color(light);
+                    transform: rotate(0deg);
                 }
             }
         }

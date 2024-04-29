@@ -240,27 +240,27 @@ button.btn-secondary {
   font-family: "Montserrat";
   font-weight: 700;
   border: 2px solid #CB995D;
-  background-color: #FFFFFF;
-  color: #CB995D;
+  background-color: #CB995D;
+  color: #FFFFFF;
 }
-a.btn-secondary:hover,
+a.btn-secondary:hover, a.btn-secondary:active, a.btn-secondary:focus,
 [type=submit].btn-secondary:hover,
-button.btn-secondary:hover {
-  background-color: #000000;
-  color: #CB995D;
+[type=submit].btn-secondary:active,
+[type=submit].btn-secondary:focus,
+button.btn-secondary:hover,
+button.btn-secondary:active,
+button.btn-secondary:focus {
+  border: 2px solid rgba(203, 153, 93, 0.5);
+  border-color: rgba(203, 153, 93, 0.5) !important;
+  background-color: rgba(203, 153, 93, 0.5) !important;
+  color: #FFFFFF !important;
 }
 a.btn-secondary:disabled,
 [type=submit].btn-secondary:disabled,
 button.btn-secondary:disabled {
-  background-color: #FFFFFF;
+  background-color: black;
   border: 0;
-  color: #000000;
-}
-a.btn-secondary:disabled:hover,
-[type=submit].btn-secondary:disabled:hover,
-button.btn-secondary:disabled:hover {
-  background-color: #000000;
-  color: #CB995D;
+  color: #FFFFFF !important;
 }
 a.btn-link,
 [type=submit].btn-link,
@@ -482,6 +482,17 @@ section h2 {
 section h2 span {
   border-bottom: 3px solid;
 }
+section#destaque .jumbotron {
+  background-image: url(../images/img-destaque.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+section#destaque .jumbotron .container > div {
+  min-height: 500px;
+}
+section#depoimentos .depoimentos--box li > div {
+  box-shadow: -1px 1px 4px 0 rgba(0, 0, 0, 0.5);
+}
 
 /*------------------------------------*\
     FOOTER
@@ -640,7 +651,8 @@ label {
   bottom: 0;
   width: 30px;
   height: 30px;
-  background: inherit;
+  background-color: #CB995D;
+  color: #FFFFFF;
   text-rendering: auto;
   font-size: 0;
   border: 0;
@@ -650,19 +662,31 @@ label {
   position: absolute;
   left: 0;
   margin: 84px auto auto -56px;
+  color: #FFFFFF;
 }
 .slick-slider button.slick-arrow.slick-prev:before {
-  display: block;
   content: "";
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 8px 8px 8px 0;
+  border-color: transparent #FFFFFF transparent transparent;
+  transform: rotate(0deg);
 }
 .slick-slider button.slick-arrow.slick-next {
   position: absolute;
   right: 0;
   margin: 84px -56px auto auto;
+  color: #FFFFFF;
 }
 .slick-slider button.slick-arrow.slick-next:before {
-  display: block;
   content: "";
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 8px 0 8px 8px;
+  border-color: transparent transparent transparent #FFFFFF;
+  transform: rotate(0deg);
 }
 
 .slick-track {
