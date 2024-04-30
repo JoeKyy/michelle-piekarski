@@ -17,9 +17,13 @@
             cursor: pointer;
 
             &.slick-prev {
+                @include responsive(medium, max) {
+                    margin: auto auto auto (- space(g));
+                }
+
                 position: absolute;
                 left: 0;
-                margin: (space(xg) * 1.5) auto auto (- space(xg));
+                margin: auto auto auto (- space(xg));
                 color: color(light);
                 &:before {
                     content: "";
@@ -33,9 +37,13 @@
                 }
             }
             &.slick-next {
+                @include responsive(medium, max) {
+                    margin: auto (- space(g)) auto auto;
+                }
+
                 position: absolute;
                 right: 0;
-                margin: (space(xg) * 1.5) (- space(xg)) auto auto;
+                margin: auto (- space(xg)) auto auto;
                 color: color(light);
                 &:before {
                     content: "";

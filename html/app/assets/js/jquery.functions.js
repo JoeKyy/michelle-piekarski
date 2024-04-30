@@ -30,7 +30,7 @@ $(function () {
 			{
 				breakpoint: 1025,
 				settings: {
-				slidesToShow: 5,
+				slidesToShow: 3,
 				slidesToScroll: 1,
 				}
 			},
@@ -55,7 +55,7 @@ $(function () {
 			{
 				breakpoint: 1025,
 				settings: {
-				slidesToShow: 3,
+				slidesToShow: 2,
 				slidesToScroll: 1,
 				}
 			},
@@ -80,7 +80,7 @@ $(function () {
 			{
 				breakpoint: 1025,
 				settings: {
-				slidesToShow: 3,
+				slidesToShow: 2,
 				slidesToScroll: 1,
 				}
 			},

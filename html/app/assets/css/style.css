@@ -474,6 +474,9 @@ main {
 /*------------------------------------*\
     SECTION
 \*------------------------------------*/
+section {
+  padding: 84px 0;
+}
 section h2 {
   font-family: "Montserrat";
   font-weight: 700;
@@ -509,6 +512,40 @@ section#destaque .jumbotron {
 }
 section#destaque .jumbotron .container > div {
   min-height: 500px;
+}
+section#sobre {
+  position: relative;
+}
+section#sobre:before {
+  display: inline-block;
+  width: 35%;
+  height: 100%;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: #5DCB99;
+}
+@media (max-width: 48em) {
+  section#sobre:before {
+    display: inline-block;
+    width: 50%;
+    height: 55%;
+    content: "";
+  }
+}
+@media (max-width: 40em) {
+  section#sobre:before {
+    display: inline-block;
+    width: 50%;
+    height: 35%;
+    content: "";
+  }
+}
+section#sobre .container {
+  position: relative;
+  z-index: 2;
 }
 section#depoimentos .depoimentos--box li > div {
   box-shadow: -1px 1px 4px 0 rgba(0, 0, 0, 0.5);
@@ -687,8 +724,13 @@ label {
 .slick-slider button.slick-arrow.slick-prev {
   position: absolute;
   left: 0;
-  margin: 84px auto auto -56px;
+  margin: auto auto auto -56px;
   color: #FFFFFF;
+}
+@media (max-width: 48em) {
+  .slick-slider button.slick-arrow.slick-prev {
+    margin: auto auto auto -32px;
+  }
 }
 .slick-slider button.slick-arrow.slick-prev:before {
   content: "";
@@ -702,8 +744,13 @@ label {
 .slick-slider button.slick-arrow.slick-next {
   position: absolute;
   right: 0;
-  margin: 84px -56px auto auto;
+  margin: auto -56px auto auto;
   color: #FFFFFF;
+}
+@media (max-width: 48em) {
+  .slick-slider button.slick-arrow.slick-next {
+    margin: auto -32px auto auto;
+  }
 }
 .slick-slider button.slick-arrow.slick-next:before {
   content: "";

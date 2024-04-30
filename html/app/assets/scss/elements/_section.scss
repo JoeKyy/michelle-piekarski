@@ -1,4 +1,6 @@
 section {
+    padding: (space(xg) * 1.5) 0;
+
     h2 {
         @include font(bold);
         color: inherit;
@@ -40,6 +42,34 @@ section {
                     min-height: 500px;
                 }
             }
+        }
+    }
+
+    &#sobre {
+        position: relative;
+
+        &:before {
+            @include responsive(medium, max) {
+                @include generated-content(50%, 55%);
+            }
+
+            @include responsive(small, max) {
+                @include generated-content(50%, 35%);
+            }
+
+            @include generated-content(35%, 100%);
+
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+
+            background-color: color(primary);
+        }
+
+        .container {
+            position: relative;
+            z-index: 2;
         }
     }
 
