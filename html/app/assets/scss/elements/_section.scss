@@ -10,6 +10,27 @@ section {
 
     &#destaque {
         .jumbotron {
+            @include responsive(small) {
+                background-position: 65% 0;
+            }
+
+            @include responsive(small, max) {
+                background-position: 70% 0;
+                background-size: 330%;
+
+                .h2 {
+                    font-size: font-size(large);
+                }
+
+                .lead {
+                    font-size: font-size(normal);
+                } 
+
+                .btn {
+                    font-size: font-size(small);
+                }
+            }
+
             background-image: url(../images/img-destaque.png);
             background-repeat: no-repeat;
             background-size: cover;

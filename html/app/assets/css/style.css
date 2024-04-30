@@ -312,7 +312,7 @@ button.btn:focus {
 body > header {
   position: fixed;
   overflow: hidden;
-  z-index: 10;
+  z-index: 1000;
   display: flex;
   width: 100%;
   justify-content: center;
@@ -487,6 +487,26 @@ section#destaque .jumbotron {
   background-repeat: no-repeat;
   background-size: cover;
 }
+@media (min-width: 40.0625em) {
+  section#destaque .jumbotron {
+    background-position: 65% 0;
+  }
+}
+@media (max-width: 40em) {
+  section#destaque .jumbotron {
+    background-position: 70% 0;
+    background-size: 330%;
+  }
+  section#destaque .jumbotron .h2 {
+    font-size: 1.125rem;
+  }
+  section#destaque .jumbotron .lead {
+    font-size: 0.875rem;
+  }
+  section#destaque .jumbotron .btn {
+    font-size: 0.75rem;
+  }
+}
 section#destaque .jumbotron .container > div {
   min-height: 500px;
 }
@@ -639,6 +659,12 @@ label {
   .position-absolute {
     position: absolute !important;
   }
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+  width: 100%;
 }
 
 .slick-slider button {

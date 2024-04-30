@@ -2,7 +2,7 @@ body {
     & > header {
         position: fixed;
         overflow: hidden;
-        z-index: 10;
+        z-index: 1000;
 
         display: flex;
         width: 100%;
