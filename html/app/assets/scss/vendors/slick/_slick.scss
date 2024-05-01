@@ -3,7 +3,7 @@
         outline: none;
 
         &.slick-arrow {
-            @include responsive(medium, max) {
+            @include responsive(small, max) {
                 transform: scale(.5);
             }
 
@@ -21,7 +21,7 @@
             cursor: pointer;
 
             &.slick-prev {
-                @include responsive(medium, max) {
+                @include responsive(small, max) {
                     margin: auto auto auto (- space(base));
                 }
 
@@ -41,7 +41,7 @@
                 }
             }
             &.slick-next {
-                @include responsive(medium, max) {
+                @include responsive(small, max) {
                     margin: auto (- space(base)) auto auto;
                 }
 

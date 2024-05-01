@@ -527,7 +527,7 @@ section#sobre:before {
   z-index: 1;
   background-color: #5DCB99;
 }
-@media (max-width: 51.25em) {
+@media (max-width: 73.75em) {
   section#sobre:before {
     display: inline-block;
     width: 50%;
@@ -554,6 +554,7 @@ section#duvidas details {
   display: block;
   width: auto;
   margin: 16px 0;
+  padding-right: 48px;
   background-color: #5DCB99;
   color: #FFFFFF;
 }
@@ -584,7 +585,7 @@ section#duvidas summary:before {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: auto 16px auto auto;
+  margin: auto -32px auto auto;
   width: 30px;
   height: 30px;
   background-color: #CB995D;
@@ -611,7 +612,7 @@ section#estrutura:before {
   z-index: 1;
   background-color: #5DCB99;
 }
-@media (max-width: 51.25em) {
+@media (max-width: 73.75em) {
   section#estrutura:before {
     display: inline-block;
     width: 50%;
@@ -805,7 +806,7 @@ label {
   border: 0;
   cursor: pointer;
 }
-@media (max-width: 51.25em) {
+@media (max-width: 40em) {
   .slick-slider button.slick-arrow {
     transform: scale(0.5);
   }
@@ -816,7 +817,7 @@ label {
   margin: auto auto auto -56px;
   color: #FFFFFF;
 }
-@media (max-width: 51.25em) {
+@media (max-width: 40em) {
   .slick-slider button.slick-arrow.slick-prev {
     margin: auto auto auto -16px;
   }
@@ -836,7 +837,7 @@ label {
   margin: auto -56px auto auto;
   color: #FFFFFF;
 }
-@media (max-width: 51.25em) {
+@media (max-width: 40em) {
   .slick-slider button.slick-arrow.slick-next {
     margin: auto -16px auto auto;
   }

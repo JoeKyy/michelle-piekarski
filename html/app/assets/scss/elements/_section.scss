@@ -88,6 +88,7 @@ section {
             display: block; 
             width: auto;
             margin: space(base) 0;
+            padding-right: space(gg);
 
             background-color: color(primary);
             color: color(light);
@@ -126,7 +127,7 @@ section {
             display: flex;
             align-items: center;
             justify-content: center;
-            margin: auto space(base) auto auto;
+            margin: auto (- space(g)) auto auto;
             width: 30px;
             height: 30px;
 
