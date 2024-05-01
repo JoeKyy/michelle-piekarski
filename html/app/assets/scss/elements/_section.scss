@@ -83,6 +83,67 @@ section {
         }
     }
 
+    &#duvidas {
+        details {
+            display: block; 
+            width: auto;
+            margin: space(base) 0;
+
+            background-color: color(primary);
+            color: color(light);
+
+            p {
+                padding: space(base);
+            }
+        }
+          
+          summary {
+            @include font(bold);
+
+            position: relative;
+
+            display: flex; 
+            align-items: center;
+            justify-content: flex-start;
+            padding: space(m) space(base);
+            
+            background-color: color(primary);
+            color: color(light);
+            cursor: pointer;
+          }
+          
+          summary::-webkit-details-marker {
+             display: none;
+          }
+          
+          summary:before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: auto space(base) auto auto;
+            width: 30px;
+            height: 30px;
+
+            background-color: color(secondary);
+            font-size: font-size(big);
+            color: color(light);
+            border-radius: 25px;
+            text-indent: 2px;
+            
+            content: "+";
+          }
+          
+          details[open] summary:before {
+            content: "-";
+          }
+    }
+
     &#estrutura {
         position: relative;
 

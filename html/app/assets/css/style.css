@@ -550,6 +550,53 @@ section#sobre .container {
 section#depoimentos .depoimentos--box li > div {
   box-shadow: -1px 1px 4px 0 rgba(0, 0, 0, 0.5);
 }
+section#duvidas details {
+  display: block;
+  width: auto;
+  margin: 16px 0;
+  background-color: #5DCB99;
+  color: #FFFFFF;
+}
+section#duvidas details p {
+  padding: 16px;
+}
+section#duvidas summary {
+  font-family: "Montserrat";
+  font-weight: 700;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 24px 16px;
+  background-color: #5DCB99;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+section#duvidas summary::-webkit-details-marker {
+  display: none;
+}
+section#duvidas summary:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto 16px auto auto;
+  width: 30px;
+  height: 30px;
+  background-color: #CB995D;
+  font-size: 1.5rem;
+  color: #FFFFFF;
+  border-radius: 25px;
+  text-indent: 2px;
+  content: "+";
+}
+section#duvidas details[open] summary:before {
+  content: "-";
+}
 section#estrutura {
   position: relative;
 }
