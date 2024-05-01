@@ -527,7 +527,7 @@ section#sobre:before {
   z-index: 1;
   background-color: #5DCB99;
 }
-@media (max-width: 48em) {
+@media (max-width: 51.25em) {
   section#sobre:before {
     display: inline-block;
     width: 50%;
@@ -549,6 +549,43 @@ section#sobre .container {
 }
 section#depoimentos .depoimentos--box li > div {
   box-shadow: -1px 1px 4px 0 rgba(0, 0, 0, 0.5);
+}
+section#estrutura {
+  position: relative;
+}
+section#estrutura:before {
+  display: inline-block;
+  width: 35%;
+  height: 100%;
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  background-color: #5DCB99;
+}
+@media (max-width: 51.25em) {
+  section#estrutura:before {
+    display: inline-block;
+    width: 50%;
+    height: 55%;
+    content: "";
+  }
+}
+@media (max-width: 40em) {
+  section#estrutura:before {
+    display: inline-block;
+    width: 50%;
+    height: 35%;
+    content: "";
+  }
+}
+section#estrutura .container {
+  position: relative;
+  z-index: 2;
+}
+section#estrutura .estrutura--slider li {
+  padding: 16px;
 }
 
 /*------------------------------------*\
@@ -721,15 +758,20 @@ label {
   border: 0;
   cursor: pointer;
 }
+@media (max-width: 51.25em) {
+  .slick-slider button.slick-arrow {
+    transform: scale(0.5);
+  }
+}
 .slick-slider button.slick-arrow.slick-prev {
   position: absolute;
   left: 0;
   margin: auto auto auto -56px;
   color: #FFFFFF;
 }
-@media (max-width: 48em) {
+@media (max-width: 51.25em) {
   .slick-slider button.slick-arrow.slick-prev {
-    margin: auto auto auto -32px;
+    margin: auto auto auto -16px;
   }
 }
 .slick-slider button.slick-arrow.slick-prev:before {
@@ -747,9 +789,9 @@ label {
   margin: auto -56px auto auto;
   color: #FFFFFF;
 }
-@media (max-width: 48em) {
+@media (max-width: 51.25em) {
   .slick-slider button.slick-arrow.slick-next {
-    margin: auto -32px auto auto;
+    margin: auto -16px auto auto;
   }
 }
 .slick-slider button.slick-arrow.slick-next:before {

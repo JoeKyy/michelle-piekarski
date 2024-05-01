@@ -82,4 +82,38 @@ section {
             }
         }
     }
+
+    &#estrutura {
+        position: relative;
+
+        &:before {
+            @include responsive(medium, max) {
+                @include generated-content(50%, 55%);
+            }
+
+            @include responsive(small, max) {
+                @include generated-content(50%, 35%);
+            }
+
+            @include generated-content(35%, 100%);
+
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: 1;
+
+            background-color: color(primary);
+        }
+
+        .container {
+            position: relative;
+            z-index: 2;
+        }
+
+        .estrutura--slider {
+            li {
+                padding: space(base);
+            }
+        }
+    }
 }

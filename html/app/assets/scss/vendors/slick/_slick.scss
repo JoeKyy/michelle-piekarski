@@ -3,6 +3,10 @@
         outline: none;
 
         &.slick-arrow {
+            @include responsive(medium, max) {
+                transform: scale(.5);
+            }
+
             position: absolute;
             z-index: 10;
             top: 0;
@@ -18,7 +22,7 @@
 
             &.slick-prev {
                 @include responsive(medium, max) {
-                    margin: auto auto auto (- space(g));
+                    margin: auto auto auto (- space(base));
                 }
 
                 position: absolute;
@@ -38,7 +42,7 @@
             }
             &.slick-next {
                 @include responsive(medium, max) {
-                    margin: auto (- space(g)) auto auto;
+                    margin: auto (- space(base)) auto auto;
                 }
 
                 position: absolute;
