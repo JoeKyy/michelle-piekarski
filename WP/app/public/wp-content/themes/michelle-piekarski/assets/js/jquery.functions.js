@@ -19,7 +19,7 @@ jQuery(document).ready(function($) {
 		}
 	});
 
-    $('.tratamentos--slide').slick({
+    $('.tratamentos--slide > div').slick({
 		dots: false,
 		arrows: true,
 		infinite: true,
@@ -44,7 +44,7 @@ jQuery(document).ready(function($) {
 		]
 	});
 
-    $('.procedimentos--slide').slick({
+    $('.procedimentos--slide > div').slick({
 		dots: false,
 		arrows: true,
 		infinite: true,
@@ -69,7 +69,7 @@ jQuery(document).ready(function($) {
 		]
 	});
 
-    $('.depoimentos--box').slick({
+    $('.depoimentos--box > div').slick({
 		dots: false,
 		arrows: true,
 		infinite: true,
@@ -94,7 +94,7 @@ jQuery(document).ready(function($) {
 		]
 	});
 
-	$('.estrutura--slider').slick({
+	$('.estrutura--slider > div').slick({
 		dots: false,
 		arrows: true,
 		infinite: true,

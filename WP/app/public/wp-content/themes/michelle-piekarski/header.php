@@ -77,14 +77,23 @@
 							</button>
 							<nav>
 								<?php
-								wp_nav_menu(
-									array(
-										'theme_location' =>
-											'main-menu',
-										'container' => 'ul',
-										'depth' => 2
-									)
-								); ?>
+									wp_nav_menu(
+										array(
+											'theme_location' =>
+												'main-menu',
+											'container' => 'ul',
+											'depth' => 2
+										)
+									);
+									
+									if (has_nav_menu('main-menu')) {
+										echo '<ul class="extra-menu-item">
+												<li>
+													<a href="#" class="btn btn-primary">Agende sua consulta</a>
+												</li>
+											  </ul>';
+									}
+								?>
 							</nav>
 						</div>
 					</div>

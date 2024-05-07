@@ -523,7 +523,7 @@ section#destaque .jumbotron {
     font-size: 0.75rem;
   }
 }
-section#destaque .jumbotron .container > div {
+section#destaque .jumbotron > div > div {
   min-height: 500px;
 }
 section#sobre {
@@ -556,11 +556,12 @@ section#sobre:before {
     content: "";
   }
 }
-section#sobre .container {
+section#sobre > div {
   position: relative;
   z-index: 2;
 }
-section#depoimentos .depoimentos--box li > div {
+section#depoimentos .depoimentos--box .slick-track > div {
+  margin: 16px 0;
   box-shadow: -1px 1px 4px 0 rgba(0, 0, 0, 0.5);
 }
 section#duvidas details {
@@ -574,6 +575,10 @@ section#duvidas details {
 section#duvidas details p {
   padding: 16px;
 }
+
+section#duvidas details > div {
+  border: 0;
+}
 section#duvidas summary {
   font-family: "Montserrat";
   font-weight: 700;
@@ -585,7 +590,13 @@ section#duvidas summary {
   background-color: #5DCB99;
   color: #FFFFFF;
   cursor: pointer;
+  gap: 0;
+  border: none;
 }
+section#duvidas summary .e-n-accordion-item-title-icon {
+  display: none;
+}
+  
 section#duvidas summary::-webkit-details-marker {
   display: none;
 }
@@ -621,6 +632,7 @@ section#estrutura:before {
   content: "";
   position: absolute;
   top: 0;
+  left: inherit;
   right: 0;
   z-index: 1;
   background-color: #5DCB99;
@@ -641,7 +653,7 @@ section#estrutura:before {
     content: "";
   }
 }
-section#estrutura .container {
+section#estrutura > div {
   position: relative;
   z-index: 2;
 }

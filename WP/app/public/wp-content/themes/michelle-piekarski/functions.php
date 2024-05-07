@@ -263,4 +263,14 @@ function michelle_piekarski_comment_count($count)
     }
 }
 
+function redirect_all_except_home() {
+    // Verifica se não é a página inicial ou a página de administração
+    if (!is_front_page() && !is_admin()) {
+        // Redireciona para a página inicial
+        wp_redirect(home_url(), 301); 
+        exit;
+    }
+}
+add_action('template_redirect', 'redirect_all_except_home');
+
 ?>
