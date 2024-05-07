@@ -71,7 +71,16 @@
             <div class="row align-items-center">
                 <div class="col-xl-12">      
                     <div class="copyright">
-                        <p>Todos os direitos reservados - Responsável técnico: Dra. Michelle Piekarski | Dermatologista | CRMSP 130749 / RQE 95942</p>
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <p>Todos os direitos reservados - Responsável técnico: Dra. Michelle Piekarski | Dermatologista | CRMSP 130749 / RQE 95942</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-8 center-block">
+                                <p><small>Dra. Michelle e sua equipe se esforçam para fornecer tratamentos dermatológicos personalizados e de alta qualidade. No entanto, resultados individuais podem variar e não são garantidos. É importante seguir as instruções médicas para otimizar os resultados</small></p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

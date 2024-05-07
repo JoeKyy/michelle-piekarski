@@ -702,9 +702,6 @@ body > footer .footer--container .soclal-list a:hover {
 }
 body > footer .copyright {
   min-height: 80px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background-color: #5DCB99;
   font-size: 0.75rem;
   color: #FFFFFF;
