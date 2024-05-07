@@ -36,6 +36,7 @@
 /app/public/wp-content/plugins/duplicator/
 /app/public/wp-content/plugins/wordfence/
 /app/public/wp-content/plugins/sucuri-scanner/
+/app/public/wp-content/plugins/elementor/
 
 # Uploads
 /app/public/wp-content/uploads/

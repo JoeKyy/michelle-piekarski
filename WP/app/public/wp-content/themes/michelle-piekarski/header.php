@@ -4,6 +4,8 @@
         <meta charset="<?php bloginfo( 'charset' ); ?>">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
 
+		<?php wp_head(); ?>
+
 		<!-- Facebook Card data -->
 		<meta property="og:title" content="Dra. Michelle Piekarski | Dermatologista | Santo André">
 		<meta property="og:site_name" content="Dra. Michelle Piekarski">
@@ -38,12 +40,11 @@
 		<meta name="theme-color" content="#ffffff" />
 		<meta name="msapplication-TileColor" content="#ffffff" />
 		<link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 		<link href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" rel="stylesheet" type="text/css" />
 		<link href="https://cdn.jsdelivr.net/npm/hamburgers@1.1.3/dist/hamburgers.css" rel="stylesheet" />
-		<link href="<?php echo get_template_directory_uri(); ?>/assets/css/style.css" rel="stylesheet" type="text/css" />
-		
-        <?php wp_head(); ?>
+
+		<link href="<?php echo get_template_directory_uri(); ?>/style.css" rel="stylesheet" type="text/css" />
     </head>
     <body <?php body_class(); ?>>
         <?php wp_body_open(); ?>

@@ -77,7 +77,12 @@
     </footer>
     <?php wp_footer(); ?>
     <!--build:js assets/js/main.min.js -->
-    <script src="<?php echo get_template_directory_uri(); ?>/assets/js/main.min.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/assets/js/modernizr.min.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/assets/js/bootstrap.min.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/assets/js/jquery-3.4.1.min.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/assets/js/fontsmoothie.min.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/assets/js/slick.min.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/assets/js/jquery.functions.js"></script>
     <!-- endbuild -->
     <script src="https://use.fontawesome.com/e5f5aeb998.js"></script>
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/jquery.inputmask.bundle.js" data-autoinit="true"></script>

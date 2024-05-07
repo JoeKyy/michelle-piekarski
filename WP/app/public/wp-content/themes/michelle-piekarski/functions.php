@@ -262,4 +262,5 @@ function michelle_piekarski_comment_count($count)
         return $count;
     }
 }
+
 ?>
