@@ -49,10 +49,12 @@
                                         <?php
                                             wp_nav_menu(
                                                 array(
-                                                'theme_location' => 'footer-1',
-                                                'container' => 'ul',
+                                                    'theme_location' =>
+                                                        'main-menu',
+                                                    'container' => 'ul',
+                                                    'depth' => 2
                                                 )
-                                            );
+                                            ); 
                                         ?>
                                     </nav>
                                     <ul class="soclal-list">
@@ -79,7 +81,7 @@
     <!--build:js assets/js/main.min.js -->
     <script src="<?php echo get_template_directory_uri(); ?>/assets/js/modernizr.min.js"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/assets/js/bootstrap.min.js"></script>
-    <script src="<?php echo get_template_directory_uri(); ?>/assets/js/jquery-3.4.1.min.js"></script>
+    <!-- <script src="<?php echo get_template_directory_uri(); ?>/assets/js/jquery-3.4.1.min.js"></script> -->
     <script src="<?php echo get_template_directory_uri(); ?>/assets/js/fontsmoothie.min.js"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/assets/js/slick.min.js"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/assets/js/jquery.functions.js"></script>
