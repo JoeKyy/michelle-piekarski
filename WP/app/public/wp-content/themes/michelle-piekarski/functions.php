@@ -263,14 +263,40 @@ function michelle_piekarski_comment_count($count)
     }
 }
 
-function redirect_all_except_home() {
-    // Verifica se não é a página inicial ou a página de administração
-    if (!is_front_page() && !is_admin()) {
+function redirect_all_except_home_and_pages() {
+    // Verifica se não é a página inicial, não é uma página, e não é a área de administração
+    if (!is_front_page() && !is_page() && !is_admin()) {
         // Redireciona para a página inicial
         wp_redirect(home_url(), 301); 
         exit;
     }
 }
-add_action('template_redirect', 'redirect_all_except_home');
+add_action('template_redirect', 'redirect_all_except_home_and_pages');
+
+
+// Desativa suporte a comentários em todos os tipos de post
+function disable_comments_support() {
+    remove_post_type_support('post', 'comments');
+    remove_post_type_support('page', 'comments');
+    remove_post_type_support('attachment', 'comments');
+    remove_post_type_support('custom_post_type', 'comments'); // Adicione suporte para outros tipos de post conforme necessário
+}
+add_action('admin_init', 'disable_comments_support');
+
+// Redireciona qualquer usuário tentando acessar a página de comentários
+function redirect_comment_link() {
+    global $pagenow;
+    if ($pagenow === 'edit-comments.php') {
+        wp_redirect(admin_url()); exit;
+    }
+}
+add_action('admin_init', 'redirect_comment_link');
+
+// Remove a seção de comentários do dashboard
+function remove_comments_from_dashboard() {
+    remove_meta_box('dashboard_recent_comments', 'dashboard', 'normal');
+}
+add_action('admin_init', 'remove_comments_from_dashboard');
+
 
 ?>

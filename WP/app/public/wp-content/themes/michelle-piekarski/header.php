@@ -7,19 +7,19 @@
 		<?php wp_head(); ?>
 
 		<!-- Facebook Card data -->
-		<meta property="og:title" content="Dra. Michelle Piekarski | Dermatologista | Santo André">
-		<meta property="og:site_name" content="Dra. Michelle Piekarski">
-		<meta property="og:url" content="https://dramichellepiekarski.com.br/">
+		<meta property="og:title" content="<?php bloginfo('name') ?>">
+		<meta property="og:site_name" content="<?php bloginfo('name') ?>">
+		<meta property="og:url" content="<?php bloginfo('url') ?>">
 		<meta property="og:type" content="doctor">
-		<meta property="og:description" content="Cuide de sua pele, cabelos e unhas! Atendemos crianças, adultos e idosos, presencial - Santo Andre, ABC e Online - Brasil e exterior. Agende sua consulta agora!">
-		<meta property="og:image" content="https://dev.joekyy.com.br/michelle-piekarski/assets/images/img-social.png">
+		<meta property="og:description" content="<?php bloginfo('description') ?>">
+		<meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/assets/images/img-social.png">
 
 		<!-- Twitter Card data -->
 		<meta name="twitter:card" content="summary_large_image"/>
-		<meta name="twitter:image" content="https://dev.joekyy.com.br/michelle-piekarski/assets/images/img-social.png">
-		<meta name="twitter:site" content="https://dramichellepiekarski.com.br/">
-		<meta name="twitter:title" content="Dra. Michelle Piekarski">
-		<meta name="twitter:description" content="Cuide de sua pele, cabelos e unhas! Atendemos crianças, adultos e idosos, presencial - Santo Andre, ABC e Online - Brasil e exterior. Agende sua consulta agora!">
+		<meta name="twitter:image" content="<?php echo get_template_directory_uri(); ?>/assets/images/img-social.png">
+		<meta name="twitter:site" content="<?php bloginfo('url') ?>">
+		<meta name="twitter:title" content="<?php bloginfo('name') ?>">
+		<meta name="twitter:description" content="<?php bloginfo('description') ?>">
 
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<link rel="apple-touch-icon" sizes="57x57" href="<?php echo get_template_directory_uri(); ?>/assets/images/favicon/apple-icon-57x57.png" />
