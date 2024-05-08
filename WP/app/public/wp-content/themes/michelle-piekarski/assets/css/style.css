@@ -335,7 +335,7 @@ body > header {
   background-color: #FFFFFF;
 }
 body > header .logo {
-  background-image: url("../../assets/images/sprite.png");
+  background-image: url("./assets/images/sprite.png");
   background-position: 0px -160px;
   width: 60px;
   height: 58px;
@@ -499,7 +499,7 @@ section h2 span {
   border-bottom: 3px solid;
 }
 section#destaque .jumbotron {
-  background-image: url(../images/img-destaque.png);
+  background-image: url(./assets/images/img-destaque.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -513,17 +513,17 @@ section#destaque .jumbotron {
     background-position: 70% 0;
     background-size: 330%;
   }
-  section#destaque .jumbotron .h2 {
-    font-size: 1.125rem;
+  section#destaque .jumbotron .h2 h1 {
+    font-size: 1.125rem !important;
   }
-  section#destaque .jumbotron .lead {
-    font-size: 0.875rem;
+  section#destaque .lead p {
+    font-size: 0.875rem !important;
   }
   section#destaque .jumbotron .btn {
     font-size: 0.75rem;
   }
 }
-section#destaque .jumbotron .container > div {
+section#destaque .jumbotron > div > div {
   min-height: 500px;
 }
 section#sobre {
@@ -556,13 +556,23 @@ section#sobre:before {
     content: "";
   }
 }
-section#sobre .container {
+section#sobre > div {
   position: relative;
   z-index: 2;
 }
-section#depoimentos .depoimentos--box li > div {
+section#depoimentos .depoimentos--box .slick-track > div {
+  margin: 16px 0;
   box-shadow: -1px 1px 4px 0 rgba(0, 0, 0, 0.5);
 }
+
+section#depoimentos .depoimentos--box .slick-track > div > div > div:last-child p {
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 section#duvidas details {
   display: block;
   width: auto;
@@ -573,6 +583,10 @@ section#duvidas details {
 }
 section#duvidas details p {
   padding: 16px;
+}
+
+section#duvidas details > div {
+  border: 0;
 }
 section#duvidas summary {
   font-family: "Montserrat";
@@ -585,7 +599,13 @@ section#duvidas summary {
   background-color: #5DCB99;
   color: #FFFFFF;
   cursor: pointer;
+  gap: 0;
+  border: none;
 }
+section#duvidas summary .e-n-accordion-item-title-icon {
+  display: none;
+}
+  
 section#duvidas summary::-webkit-details-marker {
   display: none;
 }
@@ -621,6 +641,7 @@ section#estrutura:before {
   content: "";
   position: absolute;
   top: 0;
+  left: inherit;
   right: 0;
   z-index: 1;
   background-color: #5DCB99;
@@ -641,7 +662,7 @@ section#estrutura:before {
     content: "";
   }
 }
-section#estrutura .container {
+section#estrutura > div {
   position: relative;
   z-index: 2;
 }
@@ -701,11 +722,16 @@ body > footer .footer--container .soclal-list a:hover {
   text-decoration: underline;
 }
 body > footer .copyright {
+  padding: 22px 0;
   min-height: 80px;
   background-color: #5DCB99;
   font-size: 0.75rem;
   color: #FFFFFF;
   text-align: center;
+}
+
+body > footer .copyright small {
+  font-size: 12px;
 }
 
 /*------------------------------------*\

@@ -564,6 +564,15 @@ section#depoimentos .depoimentos--box .slick-track > div {
   margin: 16px 0;
   box-shadow: -1px 1px 4px 0 rgba(0, 0, 0, 0.5);
 }
+
+section#depoimentos .depoimentos--box .slick-track > div > div > div:last-child p {
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 section#duvidas details {
   display: block;
   width: auto;

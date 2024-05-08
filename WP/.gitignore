@@ -5,6 +5,7 @@
 #
 # Note: if you want to stage/commit WP core files
 # you can delete this whole section/until Configuration.
+/app/sql/local.sql
 /app/public/.htaccess
 /app/public/local-xdebuginfo.php
 /app/public/wp-admin/
@@ -37,6 +38,7 @@
 /app/public/wp-content/plugins/wordfence/
 /app/public/wp-content/plugins/sucuri-scanner/
 /app/public/wp-content/plugins/elementor/
+/app/public/wp-content/plugins/leadster-marketing-conversacional/
 
 # Uploads
 /app/public/wp-content/uploads/

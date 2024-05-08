@@ -89,7 +89,7 @@
 									if (has_nav_menu('main-menu')) {
 										echo '<ul class="extra-menu-item">
 												<li>
-													<a href="#" class="btn btn-primary">Agende sua consulta</a>
+													<a target="_blank" href="https://web.whatsapp.com/send?text=Ol%C3%A1%2C+meu+nome+%C3%A9+%2C+meu+e-mail+%C3%A9+.+Vim+atrav%C3%A9s+do+assistente+de+leads+do+site+e+quero+saber+mais+informa%C3%A7%C3%B5es+sobre+a+consulta+com+a+Dra+Michelle.&phone=5511934500356" class="btn btn-primary">Agende sua consulta</a>
 												</li>
 											  </ul>';
 									}

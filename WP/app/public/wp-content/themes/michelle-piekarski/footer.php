@@ -13,7 +13,7 @@
                                     <h6 class="h4">Marque um horário com a Dra. Michelle Piekarski</h6>
                                     <p>Garanta seu atendimento personalizado com a Dra. Michelle e inicie sua jornada de cuidado e bem-estar.</p>
                                     <p>
-                                        <a href="#" class="btn btn-primary text-uppercase">Marcar consulta</a>
+                                        <a href="https://web.whatsapp.com/send?text=Ol%C3%A1%2C+meu+nome+%C3%A9+%2C+meu+e-mail+%C3%A9+.+Vim+atrav%C3%A9s+do+assistente+de+leads+do+site+e+quero+saber+mais+informa%C3%A7%C3%B5es+sobre+a+consulta+com+a+Dra+Michelle.&phone=5511934500356" target="_blank" class="btn btn-primary text-uppercase">Marcar consulta</a>
                                     </p>
                                 </div>
                                 <div class="col-xl-4">
@@ -58,9 +58,9 @@
                                         ?>
                                     </nav>
                                     <ul class="soclal-list">
-                                        <li><a href="#" title="Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                        <li><a href="#" title="LinkedIn"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                        <li><a href="#" title="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                        <li><a href="https://www.instagram.com/dramichellepiekarski/" target="_blank" title="Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                        <li><a href="https://www.linkedin.com/in/dra-michelle-piekarski-dermatologista-76311861/" target="_blank" title="LinkedIn"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                        <li><a href="http://www.facebook.com/dramichellepiekarski" target="_blank" title="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
